@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Portfolio</title>
+<meta name="description" content="Personal portfolio of Your Name.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Preloader ===== -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-count mono" id="preloaderCount">00</div>
+  <div class="preloader-bar"><span></span></div>
+  <div class="preloader-label mono">LOADING PORTFOLIO</div>
+</div>
+
+<!-- ===== Scroll progress ===== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===== Top navbar ===== -->
+<header class="navbar">
+  <a href="#hero" class="brand">
+    <span class="brand-box"><i class="fa-solid fa-asterisk"></i></span>
+    <span class="brand-text">Bhuvnesh&nbsp;Kumar</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#hero" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#testimonials" class="nav-link">Testimonials</a>
+    <a href="#blog" class="nav-link">Blog</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button id="menuToggle" class="icon-btn nav-burger" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Mobile overlay menu ===== -->
+<div class="overlay-menu" id="overlayMenu">
+  <button id="menuClose" class="icon-btn overlay-close" aria-label="Close menu">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ===== Skills marquee ticker ===== -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>HTML</span><i class="fa-solid fa-asterisk"></i>
+    <span>CSS</span><i class="fa-solid fa-asterisk"></i>
+    <span>JAVASCRIPT</span><i class="fa-solid fa-asterisk"></i>
+    <span>UI / UX</span><i class="fa-solid fa-asterisk"></i>
+    <span>RESPONSIVE DESIGN</span><i class="fa-solid fa-asterisk"></i>
+    <span>OPEN TO WORK</span><i class="fa-solid fa-asterisk"></i>
+    <span>HTML</span><i class="fa-solid fa-asterisk"></i>
+    <span>CSS</span><i class="fa-solid fa-asterisk"></i>
+    <span>JAVASCRIPT</span><i class="fa-solid fa-asterisk"></i>
+    <span>UI / UX</span><i class="fa-solid fa-asterisk"></i>
+    <span>RESPONSIVE DESIGN</span><i class="fa-solid fa-asterisk"></i>
+    <span>OPEN TO WORK</span><i class="fa-solid fa-asterisk"></i>
+  </div>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="section hero">
+    <div class="stamp reveal">
+      <i class="fa-solid fa-circle-check"></i> Available for work
+    </div>
+
+    <h1 class="hero-title reveal">
+      <span class="scramble" data-text="HI, I'M">HI, I'M</span><br>
+      <span class="scramble accent" data-text="YOUR NAME">BHUVNESH</span>
+    </h1>
+
+    <p class="hero-role mono reveal">&gt; I build <span id="typedRole">things for the web</span><span class="cursor">_</span></p>
+
+    <p class="hero-text reveal">
+      Add a short introduction here — who you are, what you do, and what kind of work
+      excites you. Two or three sentences is usually enough to set the tone for the
+      rest of the page.
+    </p>
+
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View my work</a>
+      <a href="Bhuvnesh CV.pdf" class="btn btn-outline" download><i class="fa-solid fa-download"></i> Download resume</a>
+    </div>
+
+    <div class="hero-socials reveal">
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about alt-bg">
+    <p class="eyebrow mono reveal">/about</p>
+    <h2 class="section-title reveal">A little about me</h2>
+
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <span class="tape tape-1"></span>
+        <div class="photo-frame">
+<img src="Img.png" alt="Bhuvnesh">
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <p>
+          Write your story here — your background, the path that brought you into your
+          field, and what makes your approach different. Keep it honest and specific;
+          visitors remember detail more than adjectives.
+        </p>
+        <p>
+          Add a second paragraph about what you're currently focused on, or the kind of
+          projects and clients you like to work with.
+        </p>
+
+        <ul class="about-facts">
+          <li><i class="fa-solid fa-location-dot"></i> Your City, Your Country</li>
+          <li><i class="fa-solid fa-graduation-cap"></i> Your Degree, Your University</li>
+          <li><i class="fa-solid fa-circle-check"></i> Available for freelance work</li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Let's talk</a>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat reveal">
+        <span class="stat-number mono" data-target="120">0</span><span class="stat-plus mono">+</span>
+        <p>Projects completed</p>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number mono" data-target="5">0</span><span class="stat-plus mono">+</span>
+        <p>Years of experience</p>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number mono" data-target="40">0</span><span class="stat-plus mono">+</span>
+        <p>Happy clients</p>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number mono" data-target="9">0</span><span class="stat-plus mono">+</span>
+        <p>Awards / certificates</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <p class="eyebrow mono reveal">/skills</p>
+    <h2 class="section-title reveal">What I work with</h2>
+
+    <div class="tabs reveal" data-tabs="skills">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="frontend">Frontend</button>
+        <button class="tab-btn" data-tab="backend">Backend</button>
+        <button class="tab-btn" data-tab="tools">Tools</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="frontend">
+        <div class="skill-bar"><div class="skill-head mono"><span>HTML / CSS</span><span>90%</span></div><div class="bar"><div class="bar-fill" data-percent="90"></div></div></div>
+        <div class="skill-bar"><div class="skill-head mono"><span>JavaScript</span><span>85%</span></div><div class="bar"><div class="bar-fill" data-percent="85"></div></div></div>
+        <div class="skill-bar"><div class="skill-head mono"><span>React</span><span>75%</span></div><div class="bar"><div class="bar-fill" data-percent="75"></div></div></div>
+        <div class="skill-bar"><div class="skill-head mono"><span>Responsive Design</span><span>88%</span></div><div class="bar"><div class="bar-fill" data-percent="88"></div></div></div>
+      </div>
+
+      <div class="tab-panel" data-panel="backend">
+        <div class="skill-bar"><div class="skill-head mono"><span>Node.js</span><span>70%</span></div><div class="bar"><div class="bar-fill" data-percent="70"></div></div></div>
+        <div class="skill-bar"><div class="skill-head mono"><span>Databases</span><span>65%</span></div><div class="bar"><div class="bar-fill" data-percent="65"></div></div></div>
+        <div class="skill-bar"><div class="skill-head mono"><span>APIs</span><span>78%</span></div><div class="bar"><div class="bar-fill" data-percent="78"></div></div></div>
+      </div>
+
+      <div class="tab-panel" data-panel="tools">
+        <div class="skill-bar"><div class="skill-head mono"><span>Git / GitHub</span><span>82%</span></div><div class="bar"><div class="bar-fill" data-percent="82"></div></div></div>
+        <div class="skill-bar"><div class="skill-head mono"><span>Figma</span><span>72%</span></div><div class="bar"><div class="bar-fill" data-percent="72"></div></div></div>
+        <div class="skill-bar"><div class="skill-head mono"><span>Testing</span><span>60%</span></div><div class="bar"><div class="bar-fill" data-percent="60"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services alt-bg">
+    <p class="eyebrow mono reveal">/services</p>
+    <h2 class="section-title reveal">What I do</h2>
+
+    <div class="bento-grid">
+      <div class="service-card bento-wide reveal">
+        <span class="service-chip chip-volt"><i class="fa-solid fa-code"></i></span>
+        <h3>Web Development</h3>
+        <p>Describe this service — the kind of sites or apps you build and the stack you use.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-chip chip-violet"><i class="fa-solid fa-mobile-screen-button"></i></span>
+        <h3>Responsive Design</h3>
+        <p>Describe this service — how you make sure things work across every screen size.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-chip chip-coral"><i class="fa-solid fa-palette"></i></span>
+        <h3>UI / UX Design</h3>
+        <p>Describe this service — your design process, tools, and what clients can expect.</p>
+      </div>
+      <div class="service-card bento-wide reveal">
+        <span class="service-chip chip-violet"><i class="fa-solid fa-server"></i></span>
+        <h3>Backend &amp; APIs</h3>
+        <p>Describe this service — server-side work, databases, and integrations you handle.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-chip chip-volt"><i class="fa-solid fa-rocket"></i></span>
+        <h3>Performance</h3>
+        <p>Describe this service — optimisation, SEO basics, or speed improvements you offer.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-chip chip-coral"><i class="fa-solid fa-headset"></i></span>
+        <h3>Support</h3>
+        <p>Describe this service — ongoing maintenance or support you provide after launch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience">
+    <p class="eyebrow mono reveal">/experience</p>
+    <h2 class="section-title reveal">Where I've been</h2>
+
+    <div class="tabs reveal" data-tabs="experience">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="work">Experience</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="work">
+        <ul class="steps">
+          <li>
+            <span class="step-year mono">2024<br>—<br>NOW</span>
+            <div class="step-box">
+              <h3>Your Job Title</h3>
+              <p class="step-org">Company Name</p>
+              <p>Describe your role and key responsibilities here.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-year mono">2022<br>—<br>2024</span>
+            <div class="step-box">
+              <h3>Your Job Title</h3>
+              <p class="step-org">Company Name</p>
+              <p>Describe your role and key responsibilities here.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-year mono">2020<br>—<br>2022</span>
+            <div class="step-box">
+              <h3>Your Job Title</h3>
+              <p class="step-org">Company Name</p>
+              <p>Describe your role and key responsibilities here.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" data-panel="education">
+        <ul class="steps">
+          <li>
+            <span class="step-year mono">2018<br>—<br>2022</span>
+            <div class="step-box">
+              <h3>Your Degree</h3>
+              <p class="step-org">Your University</p>
+              <p>Add a short note about your specialisation or achievements.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-year mono">2016<br>—<br>2018</span>
+            <div class="step-box">
+              <h3>Your Certificate / Course</h3>
+              <p class="step-org">Institute Name</p>
+              <p>Add a short note about what you studied.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects alt-bg">
+    <p class="eyebrow mono reveal">/projects</p>
+    <h2 class="section-title reveal">Selected work</h2>
+
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card reveal" data-category="web" data-title="Your Project One" data-desc="Add a longer description of this project here — the problem it solved and the tools you used." data-tags="HTML, CSS, JavaScript">
+        <div class="project-thumb thumb-volt"><i class="fa-solid fa-diagram-project"></i></div>
+        <div class="project-body">
+          <h3>Your Project One</h3>
+          <p>Short one-line description of the project.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </div>
+        <button class="project-view-btn" data-open-modal><i class="fa-solid fa-arrow-up-right-from-square"></i> View</button>
+      </article>
+
+      <article class="project-card reveal" data-category="mobile" data-title="Your Project Two" data-desc="Add a longer description of this project here — the problem it solved and the tools you used." data-tags="React Native, Firebase">
+        <div class="project-thumb thumb-violet"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <div class="project-body">
+          <h3>Your Project Two</h3>
+          <p>Short one-line description of the project.</p>
+          <div class="project-tags"><span>React Native</span><span>Firebase</span></div>
+        </div>
+        <button class="project-view-btn" data-open-modal><i class="fa-solid fa-arrow-up-right-from-square"></i> View</button>
+      </article>
+
+      <article class="project-card reveal" data-category="design" data-title="Your Project Three" data-desc="Add a longer description of this project here — the problem it solved and the tools you used." data-tags="Figma, Branding">
+        <div class="project-thumb thumb-coral"><i class="fa-solid fa-palette"></i></div>
+        <div class="project-body">
+          <h3>Your Project Three</h3>
+          <p>Short one-line description of the project.</p>
+          <div class="project-tags"><span>Figma</span><span>Branding</span></div>
+        </div>
+        <button class="project-view-btn" data-open-modal><i class="fa-solid fa-arrow-up-right-from-square"></i> View</button>
+      </article>
+
+      <article class="project-card reveal" data-category="backend" data-title="Your Project Four" data-desc="Add a longer description of this project here — the problem it solved and the tools you used." data-tags="Node.js, MongoDB">
+        <div class="project-thumb thumb-volt"><i class="fa-solid fa-server"></i></div>
+        <div class="project-body">
+          <h3>Your Project Four</h3>
+          <p>Short one-line description of the project.</p>
+          <div class="project-tags"><span>Node.js</span><span>MongoDB</span></div>
+        </div>
+        <button class="project-view-btn" data-open-modal><i class="fa-solid fa-arrow-up-right-from-square"></i> View</button>
+      </article>
+
+      <article class="project-card reveal" data-category="web" data-title="Your Project Five" data-desc="Add a longer description of this project here — the problem it solved and the tools you used." data-tags="Vue, Tailwind">
+        <div class="project-thumb thumb-violet"><i class="fa-solid fa-globe"></i></div>
+        <div class="project-body">
+          <h3>Your Project Five</h3>
+          <p>Short one-line description of the project.</p>
+          <div class="project-tags"><span>Vue</span><span>Tailwind</span></div>
+        </div>
+        <button class="project-view-btn" data-open-modal><i class="fa-solid fa-arrow-up-right-from-square"></i> View</button>
+      </article>
+
+      <article class="project-card reveal" data-category="design" data-title="Your Project Six" data-desc="Add a longer description of this project here — the problem it solved and the tools you used." data-tags="Illustration, UI Kit">
+        <div class="project-thumb thumb-coral"><i class="fa-solid fa-shapes"></i></div>
+        <div class="project-body">
+          <h3>Your Project Six</h3>
+          <p>Short one-line description of the project.</p>
+          <div class="project-tags"><span>Illustration</span><span>UI Kit</span></div>
+        </div>
+        <button class="project-view-btn" data-open-modal><i class="fa-solid fa-arrow-up-right-from-square"></i> View</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section testimonials">
+    <p class="eyebrow mono reveal">/testimonials</p>
+    <h2 class="section-title reveal">What people say</h2>
+
+    <div class="testi-slider reveal">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Add a testimonial quote here from a client or colleague about working with you.</p>
+          <div class="testi-person">
+            <span class="testi-avatar"><i class="fa-solid fa-user"></i></span>
+            <div><strong>Client Name</strong><span>Role, Company</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Add another testimonial quote here about a specific project or result.</p>
+          <div class="testi-person">
+            <span class="testi-avatar"><i class="fa-solid fa-user"></i></span>
+            <div><strong>Client Name</strong><span>Role, Company</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>Add a third testimonial here — keep it short and specific for the best effect.</p>
+          <div class="testi-person">
+            <span class="testi-avatar"><i class="fa-solid fa-user"></i></span>
+            <div><strong>Client Name</strong><span>Role, Company</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-controls">
+        <button id="testiPrev" class="icon-btn" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button id="testiNext" class="icon-btn" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="section blog alt-bg">
+    <p class="eyebrow mono reveal">/blog</p>
+    <div class="blog-head reveal">
+      <h2 class="section-title">Recent writing</h2>
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="blogSearch" placeholder="Search articles...">
+      </div>
+    </div>
+
+    <div class="blog-grid" id="blogGrid">
+      <article class="blog-card reveal" data-title="your first article title">
+        <span class="blog-stamp mono">Jan 2026</span>
+        <div class="blog-thumb"><i class="fa-solid fa-newspaper"></i></div>
+        <h3>Your Article Title Goes Here</h3>
+        <p>Add a short excerpt describing what this article covers.</p>
+        <a href="#" class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+      </article>
+      <article class="blog-card reveal" data-title="your second article title">
+        <span class="blog-stamp mono">Feb 2026</span>
+        <div class="blog-thumb"><i class="fa-solid fa-newspaper"></i></div>
+        <h3>Your Article Title Goes Here</h3>
+        <p>Add a short excerpt describing what this article covers.</p>
+        <a href="#" class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+      </article>
+      <article class="blog-card reveal" data-title="your third article title">
+        <span class="blog-stamp mono">Mar 2026</span>
+        <div class="blog-thumb"><i class="fa-solid fa-newspaper"></i></div>
+        <h3>Your Article Title Goes Here</h3>
+        <p>Add a short excerpt describing what this article covers.</p>
+        <a href="#" class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
+      </article>
+    </div>
+    <p class="empty-state mono" id="blogEmpty" hidden>NO ARTICLES MATCH YOUR SEARCH.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <p class="eyebrow mono reveal">/faq</p>
+    <h2 class="section-title reveal">Common questions</h2>
+
+    <div class="accordion reveal">
+      <div class="accordion-item">
+        <button class="accordion-head">
+          <span>What services do you offer?</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-body"><p>Add your answer here.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-head">
+          <span>What is your usual turnaround time?</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-body"><p>Add your answer here.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-head">
+          <span>Do you work with clients remotely?</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-body"><p>Add your answer here.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-head">
+          <span>How can I get a quote?</span>
+          <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="accordion-body"><p>Add your answer here.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact alt-bg">
+    <p class="eyebrow mono reveal">/contact</p>
+    <h2 class="section-title reveal">Let's work together</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>Add a short note inviting people to reach out about projects, collaborations, or questions.</p>
+
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span id="emailText">your.email@example.com</span>
+            <button class="copy-btn" id="copyEmail" aria-label="Copy email"><i class="fa-regular fa-copy"></i></button>
+          </li>
+          <li><i class="fa-solid fa-phone"></i> <span>+00 000 000 0000</span></li>
+          <li><i class="fa-solid fa-location-dot"></i> <span>Your City, Your Country</span></li>
+        </ul>
+
+        <div class="hero-socials">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cName" class="mono">NAME</label>
+            <input type="text" id="cName" name="name" required>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="cEmail" class="mono">EMAIL</label>
+            <input type="email" id="cEmail" name="email" required>
+            <span class="form-error"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cSubject" class="mono">SUBJECT</label>
+          <input type="text" id="cSubject" name="subject" required>
+          <span class="form-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="cMessage" class="mono">MESSAGE</label>
+          <textarea id="cMessage" name="message" rows="5" required></textarea>
+          <span class="form-error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send message</button>
+      </form>
+    </div>
+
+    <div class="newsletter reveal">
+      <div class="newsletter-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+      <div class="newsletter-text">
+        <h3>Stay updated</h3>
+        <p>Subscribe to get occasional updates about new projects and articles.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" placeholder="you@example.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-bell"></i> Subscribe</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <span class="postmark mono">EST. 2026</span>
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <p class="footer-note mono">Built with HTML / CSS / JS</p>
+    </footer>
+  </section>
+
+</main>
+
+<!-- ===== Back to top ===== -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ===== Toast ===== -->
+<div class="toast" id="toast"></div>
+
+<!-- ===== Project modal ===== -->
+<div class="modal-overlay" id="projectModal" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="icon-btn modal-close" id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-thumb"><i class="fa-solid fa-diagram-project" id="modalIcon"></i></div>
+    <h3 id="modalTitle">Project title</h3>
+    <p id="modalDesc">Project description.</p>
+    <div class="project-tags" id="modalTags"></div>
+    <div class="modal-actions">
+      <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+      <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Source code</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
