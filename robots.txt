@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astroverseo243-ship-it.github.io/Animated-portfolio/sitemap.xml
