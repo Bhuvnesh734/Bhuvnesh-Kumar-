@@ -3,7 +3,7 @@ A modern responsive portfolio website built with HTML, CSS and JavaScript featur
 # Animated Portfolio
 
 ## Live Demo
-https://astroverseo243-ship-it.github.io/Animated-portfolio/
+https://bhuvnesh734.github.io/Bhuvnesh-Kumar-/
 
 ## Screenshots
 
