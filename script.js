@@ -469,3 +469,78 @@ document.addEventListener("keydown", (e) => {
     closeArticle();
   }
 });
+// ===== Blog Article System =====
+const articles = {
+  article1: {
+    title: "How I Started Web Development",
+    date: "Aug 2026",
+    content: `
+      <img src="blog-images/web-development.jpg" alt="Web Development" class="article-image">
+      <p>My journey into web development started with a simple curiosity about how websites work.</p>
+      <h3>The Beginning</h3>
+      <p>I started learning HTML and CSS to understand how websites are structured and designed.</p>
+      <h3>Learning JavaScript</h3>
+      <p>After learning the basics, I started exploring JavaScript and discovered how websites can become interactive and dynamic.</p>
+      <h3>Building Projects</h3>
+      <p>Building real projects helped me understand concepts much better than simply watching tutorials.</p>
+      <h3>What I Learned</h3>
+      <p>The biggest lesson I learned is that consistency and practical experience are extremely important when learning programming.</p>
+    `
+  },
+  article2: {
+    title: "What I Learned From Building Projects",
+    date: "Aug 2026",
+    content: `
+      <img src="blog-images/projects.jpg" alt="Programming Projects" class="article-image">
+      <p>Working on projects has been one of the most important parts of my learning journey.</p>
+      <h3>Learning By Doing</h3>
+      <p>Projects force you to solve real problems instead of simply memorizing concepts.</p>
+      <h3>Problem Solving</h3>
+      <p>Every project brings new errors and challenges. Solving those problems gradually improves your programming skills.</p>
+      <h3>Improving With Every Project</h3>
+      <p>Each project teaches something new and helps improve the quality of the next project.</p>
+    `
+  },
+  article3: {
+    title: "Building My Portfolio Website",
+    date: "Aug 2026",
+    content: `
+      <img src="blog-images/portfolio.jpg" alt="Portfolio Website" class="article-image">
+      <p>A portfolio website is a great way for a developer to showcase their skills, projects and experience.</p>
+      <h3>Designing The Website</h3>
+      <p>I wanted the website to look modern while keeping the interface simple and easy to navigate.</p>
+      <h3>Using HTML, CSS and JavaScript</h3>
+      <p>HTML was used for the structure, CSS for the visual design and JavaScript for interactive features.</p>
+      <h3>The Final Result</h3>
+      <p>The final website brings together my projects, skills and experience in one place.</p>
+    `
+  }
+};
+const articleModal = document.getElementById("articleModal");
+const articleModalClose = document.getElementById("articleModalClose");
+const articleTitle = document.getElementById("articleTitle");
+const articleDate = document.getElementById("articleDate");
+const articleContent = document.getElementById("articleContent");
+document.querySelectorAll("[data-open-article]").forEach(button => {
+  button.addEventListener("click", () => {
+    const card = button.closest(".blog-card");
+    const article = articles[card.dataset.article];
+    if (!article) return;
+    articleTitle.textContent = article.title;
+    articleDate.textContent = article.date;
+    articleContent.innerHTML = article.content;
+    articleModal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+});
+function closeArticle() {
+  articleModal.classList.remove("active");
+  document.body.style.overflow = "";
+}
+articleModalClose.addEventListener("click", closeArticle);
+articleModal.addEventListener("click", event => {
+  if (event.target === articleModal) closeArticle();
+});
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeArticle();
+});
