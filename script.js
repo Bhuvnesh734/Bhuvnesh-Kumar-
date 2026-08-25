@@ -418,3 +418,54 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+// ===== Article Modal =====
+
+const articleModal = document.getElementById("articleModal");
+const articleModalClose = document.getElementById("articleModalClose");
+
+const articleTitle = document.getElementById("articleTitle");
+const articleDate = document.getElementById("articleDate");
+const articleContent = document.getElementById("articleContent");
+
+document.querySelectorAll("[data-open-article]").forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    const card = button.closest(".blog-card");
+
+    const title = card.dataset.title;
+    const date = card.dataset.date;
+    const content = card.dataset.content;
+
+    articleTitle.textContent = title;
+    articleDate.textContent = date;
+    articleContent.textContent = content;
+
+    articleModal.classList.add("active");
+    articleModal.setAttribute("aria-hidden", "false");
+
+    document.body.style.overflow = "hidden";
+  });
+
+});
+
+function closeArticle() {
+  articleModal.classList.remove("active");
+  articleModal.setAttribute("aria-hidden", "true");
+
+  document.body.style.overflow = "";
+}
+
+articleModalClose.addEventListener("click", closeArticle);
+
+articleModal.addEventListener("click", (e) => {
+  if (e.target === articleModal) {
+    closeArticle();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeArticle();
+  }
+});
