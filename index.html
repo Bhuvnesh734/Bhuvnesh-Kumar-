@@ -451,27 +451,70 @@ Over time, I have worked on improving my skills in web development, problem-solv
     </div>
 
     <div class="blog-grid" id="blogGrid">
-      <article class="blog-card reveal" data-title="your first article title">
-        <span class="blog-stamp mono">Jan 2026</span>
-        <div class="blog-thumb"><i class="fa-solid fa-newspaper"></i></div>
-        <h3>Your Article Title Goes Here</h3>
-        <p>Add a short excerpt describing what this article covers.</p>
-        <a href="#" class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
-      </article>
-      <article class="blog-card reveal" data-title="your second article title">
-        <span class="blog-stamp mono">Feb 2026</span>
-        <div class="blog-thumb"><i class="fa-solid fa-newspaper"></i></div>
-        <h3>Your Article Title Goes Here</h3>
-        <p>Add a short excerpt describing what this article covers.</p>
-        <a href="#" class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
-      </article>
-      <article class="blog-card reveal" data-title="your third article title">
-        <span class="blog-stamp mono">Mar 2026</span>
-        <div class="blog-thumb"><i class="fa-solid fa-newspaper"></i></div>
-        <h3>Your Article Title Goes Here</h3>
-        <p>Add a short excerpt describing what this article covers.</p>
-        <a href="#" class="blog-link">Read more <i class="fa-solid fa-arrow-right"></i></a>
-      </article>
+  <article class="blog-card reveal"
+  data-article="article1">
+
+  <span class="blog-stamp mono">Aug 2026</span>
+
+  <div class="blog-thumb">
+    <i class="fa-solid fa-newspaper"></i>
+  </div>
+
+  <h3>How I Started Web Development</h3>
+
+  <p>
+    My journey from learning the basics of web development
+    to building real-world projects.
+  </p>
+
+  <button class="blog-link" data-open-article>
+    Read more
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+
+</article>
+
+
+<article class="blog-card reveal"
+  data-article="article2">
+
+  <span class="blog-stamp mono">Aug 2026</span>
+
+  <div class="blog-thumb">
+    <i class="fa-solid fa-code"></i>
+  </div>
+
+  <h3>What I Learned From Building Projects</h3>
+
+  <p>
+    The lessons I learned while working on practical
+    web development projects.
+  </p>
+
+  <button class="blog-link" data-open-article>
+    Read more
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+</article>
+<article class="blog-card reveal"
+  data-article="article3">
+  <span class="blog-stamp mono">Aug 2026</span>
+
+  <div class="blog-thumb">
+    <i class="fa-solid fa-laptop-code"></i>
+  </div>
+
+  <h3>Building My Portfolio Website</h3>
+  <p>
+    How I designed and developed my personal portfolio
+    website using HTML, CSS and JavaScript.
+  </p>
+
+  <button class="blog-link" data-open-article>
+    Read more
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+</article>
     </div>
     <p class="empty-state mono" id="blogEmpty" hidden>NO ARTICLES MATCH YOUR SEARCH.</p>
   </section>
@@ -610,7 +653,27 @@ Over time, I have worked on improving my skills in web development, problem-solv
     </div>
   </div>
 </div>
+<!-- ===== Article Modal ===== -->
 
+<div class="article-modal-overlay" id="articleModal">
+  <div class="article-modal">
+  <button
+      class="icon-btn article-modal-close"
+      id="articleModalClose"
+      aria-label="Close article">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <span class="blog-stamp mono" id="articleDate">
+      Aug 2026
+    </span>
+    <h2 id="articleTitle">
+      Article Title
+    </h2>
+    <div class="article-content" id="articleContent">
+     <!-- Article content will be inserted by JavaScript -->
+    </div>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
