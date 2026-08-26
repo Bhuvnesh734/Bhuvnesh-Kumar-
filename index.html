@@ -439,85 +439,47 @@ Over time, I have worked on improving my skills in web development, problem-solv
     </div>
   </section>
 
-  <!-- BLOG -->
-  <section id="blog" class="section blog alt-bg">
-    <p class="eyebrow mono reveal">/blog</p>
-    <div class="blog-head reveal">
-      <h2 class="section-title">Recent writing</h2>
-      <div class="search-box">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="blogSearch" placeholder="Search articles...">
-      </div>
-    </div>
-
-    <div class="blog-grid" id="blogGrid">
-  <article class="blog-card reveal"
-  data-article="article1">
-
-  <span class="blog-stamp mono">Aug 2026</span>
-
-  <div class="blog-thumb">
-    <i class="fa-solid fa-newspaper"></i>
-  </div>
-
-  <h3>How I Started Web Development</h3>
-
-  <p>
-    My journey from learning the basics of web development
-    to building real-world projects.
-  </p>
-
-  <button class="blog-link" data-open-article>
-    Read more
-    <i class="fa-solid fa-arrow-right"></i>
-  </button>
-
+<!-- BLOG -->
+<section id="blog" class="section blog alt-bg">
+<p class="eyebrow mono reveal">/blog</p>
+<div class="blog-head reveal">
+<h2 class="section-title">Recent writing</h2>
+<div class="search-box">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input type="text" id="blogSearch" placeholder="Search articles...">
+</div>
+</div>
+<div class="blog-grid" id="blogGrid">
+<article class="blog-card reveal" data-title="how i started web development" data-article="article1">
+<div class="blog-image">
+<img src="blog-images/web-development.jpg" alt="How I Started Web Development">
+</div>
+<span class="blog-stamp mono">Aug 2026</span>
+<h3>How I Started Web Development</h3>
+<p>My journey into web development, from learning HTML and CSS to building real projects.</p>
+<button class="blog-link" data-open-article>Read article <i class="fa-solid fa-arrow-right"></i></button>
 </article>
-
-
-<article class="blog-card reveal"
-  data-article="article2">
-
-  <span class="blog-stamp mono">Aug 2026</span>
-
-  <div class="blog-thumb">
-    <i class="fa-solid fa-code"></i>
-  </div>
-
-  <h3>What I Learned From Building Projects</h3>
-
-  <p>
-    The lessons I learned while working on practical
-    web development projects.
-  </p>
-
-  <button class="blog-link" data-open-article>
-    Read more
-    <i class="fa-solid fa-arrow-right"></i>
-  </button>
+<article class="blog-card reveal" data-title="what i learned from building projects" data-article="article2">
+<div class="blog-image">
+<img src="blog-images/projects.jpg" alt="What I Learned From Building Projects">
+</div>
+<span class="blog-stamp mono">Aug 2026</span>
+<h3>What I Learned From Building Projects</h3>
+<p>The biggest lessons I learned while building real-world programming projects.</p>
+<button class="blog-link" data-open-article>Read article <i class="fa-solid fa-arrow-right"></i></button>
 </article>
-<article class="blog-card reveal"
-  data-article="article3">
-  <span class="blog-stamp mono">Aug 2026</span>
-
-  <div class="blog-thumb">
-    <i class="fa-solid fa-laptop-code"></i>
-  </div>
-
-  <h3>Building My Portfolio Website</h3>
-  <p>
-    How I designed and developed my personal portfolio
-    website using HTML, CSS and JavaScript.
-  </p>
-
-  <button class="blog-link" data-open-article>
-    Read more
-    <i class="fa-solid fa-arrow-right"></i>
-  </button>
+<article class="blog-card reveal" data-title="building my portfolio website" data-article="article3">
+<div class="blog-image">
+<img src="blog-images/portfolio.jpg" alt="Building My Portfolio Website">
+</div>
+<span class="blog-stamp mono">Aug 2026</span>
+<h3>Building My Portfolio Website</h3>
+<p>How I designed and developed my personal portfolio using HTML, CSS and JavaScript.</p>
+<button class="blog-link" data-open-article>Read article <i class="fa-solid fa-arrow-right"></i></button>
 </article>
-    </div>
-    <p class="empty-state mono" id="blogEmpty" hidden>NO ARTICLES MATCH YOUR SEARCH.</p>
-  </section>
+</div>
+<p class="empty-state mono" id="blogEmpty" hidden>NO ARTICLES MATCH YOUR SEARCH.</p>
+</section>
 
   <!-- FAQ -->
   <section id="faq" class="section faq">
@@ -653,26 +615,16 @@ Over time, I have worked on improving my skills in web development, problem-solv
     </div>
   </div>
 </div>
-<!-- ===== Article Modal ===== -->
-
-<div class="article-modal-overlay" id="articleModal">
-  <div class="article-modal">
-  <button
-      class="icon-btn article-modal-close"
-      id="articleModalClose"
-      aria-label="Close article">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
-    <span class="blog-stamp mono" id="articleDate">
-      Aug 2026
-    </span>
-    <h2 id="articleTitle">
-      Article Title
-    </h2>
-    <div class="article-content" id="articleContent">
-     <!-- Article content will be inserted by JavaScript -->
-    </div>
-  </div>
+<!-- ARTICLE MODAL -->
+<div class="article-modal-overlay" id="articleModal" aria-hidden="true">
+<div class="article-modal" role="dialog" aria-modal="true">
+<button class="icon-btn article-modal-close" id="articleModalClose" aria-label="Close article">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<span class="blog-stamp mono" id="articleDate">Aug 2026</span>
+<h2 id="articleTitle">Article Title</h2>
+<div class="article-content" id="articleContent"></div>
+</div>
 </div>
 <script src="script.js"></script>
 </body>
