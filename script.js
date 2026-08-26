@@ -296,10 +296,10 @@ if(blogEmpty)blogEmpty.hidden=visibleCount!==0;
 /* 16. BLOG ARTICLES */
 const articles={
 article1:{
-title:'How I Started Web Development',
+title:'GHEE POD — 5g Single-Serve Ghee',
 date:'Aug 2026',
 content:`
-<img src="blog-images/web-development.jpg" alt="Web Development" class="article-image">
+<img src="blog-images/GheePod.jpg" alt="Web Development" class="article-image">
 <p>My journey into web development started with a simple curiosity about how websites work.</p>
 <h3>The Beginning</h3>
 <p>I started learning HTML and CSS to understand how websites are structured and designed.</p>
